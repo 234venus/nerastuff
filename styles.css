@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Warna dasar hitam */
+    background-image: url('css.jpg'); /* Menggunakan gambar tekstur */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Latar belakang transparan */
+    border-radius: 15px; /* Meningkatkan sudut border */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Menambah efek bayangan */
+    padding: 30px; /* Menambah padding */
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.logo {
+    max-width: 150px; /* Ukuran logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 15px; /* Agar logo terpusat dan ada jarak ke bawah */
+    animation: fadeIn 1s; /* Menambahkan efek muncul */
+    border: 5px solid white; /* Menambahkan outline putih */
+    border-radius: 50%; /* Membuat logo berbentuk bulat */
+    padding: 5px; /* Menambah jarak antara logo dan outline */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Ukuran font yang lebih besar */
+}
+
+.contact-links {
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    display: flex; /* Mengatur flex untuk ikon dan teks */
+    align-items: center; /* Memusatkan ikon dan teks */
+    justify-content: center; /* Menyusun isi tombol ke tengah */
+    background-color: red; /* Warna latar belakang merah untuk tombol */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0; /* Spasi antar tombol */
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.contact-btn i {
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+.contact-btn:hover {
+    background-color: darkred; /* Warna lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.back-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Warna lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
